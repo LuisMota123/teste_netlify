@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Número de Neper</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+    display: flex;  
+    justify-content: center;
+}
+
+.menu {
+  display: none;
+}
+
+#inicio{
+    display: flex;  
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+        <a href="#inicio" class="w3-button w3-block w3-black">INICIO</a>
+    </div> 
+    <div class="w3-col s3">
+      <a href="#sobre" class="w3-button w3-block w3-black">SOBRE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#calcular" class="w3-button w3-block w3-black">CALCULAR</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="inicio">
+    <div class="w3-content" style="max-width:700px">
+      <br>
+      <br>
+      <br>
+      <h1>John Neper</h1>
+      <img src="https://images.schoolmouv.fr/john-napier.jpg" width="450" height="575">
+    </div>
+  </div>
+
+<div class="w3-container" id="sobre">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre o número de Neper</span></h5>
+    <p>O número de Neper, que se representa habitualmente pela letra e, deve o seu nome ao matemático escocês John Neper (1550-1617) e a designação e ao matemático suíço Leonhard Euler (1707-1783). Pensa-se que a escolha do símbolo e possa dever-se ao facto de ser a primeira letra da palavra "exponencial".</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Se a linguagem foi dada aos homens para esconder seus pensamentos, então o propósito do gesto era desvendá-los</i></p>
+      <p>John Neper</p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="calcular">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Como calcular</span></h5>
+    <p>O número de Neper é uma constante que surge em várias aplicações científicas. O seu valor encontra-se, por exemplo, ao calcular o limite da sucessão. O valor deste limite é um número irracional (além disso é, também, transcendente, uma vez que não é solução de qualquer equação algébrica de coeficientes racionais). O número de Neper, escrito com dez casas decimais, é e = 2,7182818285 (a última casa decimal resulta de arredondamento).</p>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, '1forma');" id="myLink">
+        <div class="w3-col s6 tablink">1ª Forma</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, '2forma');">
+        <div class="w3-col s6 tablink">2ª Forma</div>
+      </a>
+    </div>
+
+    <div id="1forma" class="w3-container menu w3-padding-48 w3-card">
+        <center>
+            <img src="https://sabermatematica.com.br/wp-content/uploads/2019/03/numero-de-euler-matematica-financeira-jakob-bernoulli.png">
+        </center>
+    </div>
+
+    <div id="2forma" class="w3-container menu w3-padding-48 w3-card">
+        <center> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAACQCAMAAAD3E8RLAAAAWlBMVEX///9QUFCFhYUAAABiYmJ0dHSenp44ODi/v79/f38gICC2trbOzs4ICAg/Pz/w8PDm5ubf39/Y2NiPj4+vr68vLy9vb28PDw/19fWBgYGpqanJyclLS0vr6+sbJuJIAAAEXUlEQVR4nO2dC3ecKhRGnUItTLlQrq/YJv//b14EbfGk18xMVBj99lrtJLNMirs8D0emKMCzYlIXIC+sZKmLkBOi01cImaMhZA6EECCEACEECCFACAFCCBBCgJAYI8SVCYHlzITSmrdaq9TlGDGXpuuq1KXICC2KgrM2fsuKVIXJANUNLq7MRu8Jmao0GSBYVwy9fFwpDi3Euu6qXrqgHDqz8wgpu7p468ZvrIiIRznLrvEPHVhIzUo3jkx3q2RELOTSzca8AwtxE56yXW4yxVCNJh/Wu+Lav0ytSF4OwRd3K4o1Unw4hormd/0wvjVV3L9MA0/55RAM1UKwWeUXcZP5Pc4q7VqPPEenaoKQerx5E3eq0zXeh2niTuS4Qgqu3c1KvnCFaZgnfu/AQor29fV1sRNxK6uBmbMjC3mI9EJsm8va12Psx9dsSiXZmdeXfwNCCBBCyF9I3exaxNyFNN2VFnHboHDuQtzcnhZRblpkCJlR9oz32/36VdhViIoXW5myc5PJHwghREJCWEXzOBL5wvNm/cVIJCTEqnkVx6pfvubNjy2FjG+gyZA3zi3EcFbNp6Y7Cck0SSKE1WY74rsIEa3e4V9Zh31qiHgeIXaXyvxEQvYBQgjPLMRyLVdvRs8sRA+DUfjyo931mxH82qfeAngUweqiHjOzku/rZIGbuEEI4TLuiEJIoOSmsL1Duz+uH7Gpc2QCyYKRihfG+JQLHtJt3lLnyAR+pvLhljptGHfRZBy2+5NmAiHFmJ40JjGsLySr7Ij7Wbv4NZ78pkAIAUIIEEKAEMJhhKh+jRFH9OxpowCEckw8wkN9EzoIwdx1AkIIg5AyBATcV9W3vcluzj+vIb/KvVl/2/+ToMnMkVKW/jV1QXJjpaZ87hSMdwhEASgQQoAQAoQQIIRwQCG2bh7+WdGy9iBRgD9YNf4vIyAwgc0sAoQQnBA7Zgi475rrdlxS3+ptzGuI+L4dv9Ld5B0YNJkZYjq6BEIIn5lQrJbleAxwCvw7IIQAIQQIIUAI4ehC5H1zEiv1sZ+AVI0Xkv3T/rshJYTEVAZCYmw59CFKiKryib/1P+vwPfWNPYpb7Wm/Iz7WEKPWIdMnoG9BhcMb0GQmVDi6FUII5u5KXh5uT+JTWLnv0WpPgIaQORBCgBAChBDOIsT213HSunyZ1O1JjCC5lQIhhLmQF3MvLwnLvgmDkOF0wbDt+cru5fEkpUyZ1xDz417eEpZ9A4xoKuyHR5jpo1wghHBbPMBU2T0klBREAd5xlhn8zUAIAUIIpxSyNOCcUEg5nTP7lzC7lZqfz8h0RiSmaiMQQiBC/l3iiTd1b2cQokJAoCqKt8W1f6qD7XYFTWbOEHb2LQFCAnb6EAoI+T9MJfEEQIxWoVsRiIV4lLbBBLJsAmVXI3UxRuohv7vse8792Uanp9ZjwjtqSMA0hfW7UUGIX+5e7PTXGVFtOAUgCCmHHtbv5VSnWMkssM+HuhyW/wDsOE1FVKCP2AAAAABJRU5ErkJggg==">
+        </center>
+    </div>  
+    <br>
+    <br>  
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
